@@ -1,0 +1,25 @@
+<div>
+  <h1>Login</h1>
+  <form [formGroup]="form" (ngSubmit)="login()">
+    <div>
+      <label mat-label for="email">Email</label>
+      <input
+        mat-input
+        type="email"
+        id="email"
+        formControlName="email"
+        required
+      />
+    </div>
+    <div>
+      <label mat-label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        formControlName="password"
+        required
+      />
+    </div>
+    <button mat-flat-button type="submit">Login</button>
+  </form>
+</div>
