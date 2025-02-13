@@ -1,9 +1,13 @@
 import { Component, inject } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
-import { MatInputModule, MatLabel } from '@angular/material/input';
+import {
+  MatFormField,
+  MatInputModule,
+  MatLabel,
+} from '@angular/material/input';
 import { MatGridListModule } from '@angular/material/grid-list';
-
+import { MatCardModule } from '@angular/material/card';
 @Component({
   selector: 'app-login',
   imports: [
@@ -11,6 +15,9 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatButtonModule,
     MatInputModule,
     MatGridListModule,
+    MatLabel,
+    MatFormField,
+    MatCardModule,
   ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css',
